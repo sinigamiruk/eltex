@@ -1,0 +1,59 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CFLAGS	makefile	/^CFLAGS=-g -Wall -std=c99 -lncurses -lm -lpthread$/;"	m
+COMPILER	makefile	/^COMPILER=gcc$/;"	m
+COPY_H	copy.h	5;"	d
+DirectoryOfThisScript	.ycm_extra_conf.py	/^def DirectoryOfThisScript():$/;"	f
+EXECUTABLE	makefile	/^EXECUTABLE=fman$/;"	m
+FlagsForFile	.ycm_extra_conf.py	/^def FlagsForFile( filename, **kwargs ):$/;"	f
+GLOBAL_CONFIG	global.h	2;"	d
+GetCompilationInfoForFile	.ycm_extra_conf.py	/^def GetCompilationInfoForFile( filename ):$/;"	f
+IsHeaderFile	.ycm_extra_conf.py	/^def IsHeaderFile( filename ):$/;"	f
+MakeRelativePathsInFlagsAbsolute	.ycm_extra_conf.py	/^def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):$/;"	f
+NAVIGATION	navigate.h	5;"	d
+OBJECTS	makefile	/^OBJECTS=$(SOURSES:.c=.o)$/;"	m
+POPUPMENU	ui.h	2;"	d
+PRINT_FILES	print_files.h	2;"	d
+SOURCE_EXTENSIONS	.ycm_extra_conf.py	/^SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', '.m', '.mm' ]$/;"	v
+SOURSES	makefile	/^SOURSES=main.c copy.c navigate.c print_files.c ui.c$/;"	m
+WINDOW_COUNT	global.h	15;"	d
+_copy	copy.c	/^void * _copy(void *param)$/;"	f
+clear_path	print_files.c	/^void clear_path(char *path)$/;"	f
+compilation_database_folder	.ycm_extra_conf.py	/^compilation_database_folder = ''$/;"	v
+copy	copy.c	/^void copy(char *source, char *destination, WINDOW *win)$/;"	f
+copy_params	copy.c	/^struct copy_params {$/;"	s	file:
+cp	copy.c	/^    struct copy_params cp;$/;"	m	struct:print_window	typeref:struct:print_window::copy_params	file:
+current_line	global.h	/^    int current_line; \/\/ currently selected line in region, must be$/;"	m	struct:field
+current_path	global.h	/^    char current_path[2048];$/;"	m	struct:field
+current_region	global.h	/^    int current_region; \/\/ describes region, with start in this item, thats$/;"	m	struct:field
+database	.ycm_extra_conf.py	/^  database = None$/;"	v
+database	.ycm_extra_conf.py	/^  database = ycm_core.CompilationDatabase( compilation_database_folder )$/;"	v
+destination	copy.c	/^    char *destination;$/;"	m	struct:copy_params	file:
+field	global.h	/^struct field {$/;"	s
+flags	.ycm_extra_conf.py	/^flags = [$/;"	v
+line_to_print	copy.c	/^    int line_to_print;$/;"	m	struct:print_window	file:
+main	main.c	/^int main()$/;"	f
+max	ui.c	/^int max(int a, int b)$/;"	f
+min	navigate.c	/^int min(int a, int b) {$/;"	f
+navigate	navigate.c	/^void navigate()$/;"	f
+os	.ycm_extra_conf.py	/^import os$/;"	i
+out	global.h	/^    WINDOW *out;    \/\/ outter window, to draw a box$/;"	m	struct:field
+percent_coplete	copy.c	/^    int percent_coplete;$/;"	m	struct:print_window	file:
+popup	ui.c	/^int popup(char *message)$/;"	f
+print_files	print_files.c	/^int print_files(int window, struct dirent **d)$/;"	f
+print_window	copy.c	/^struct print_window {$/;"	s	file:
+print_window_cond	copy.c	/^pthread_cond_t  print_window_cond = PTHREAD_COND_INITIALIZER;$/;"	v
+print_window_mutex	copy.c	/^pthread_mutex_t print_window_mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+show_progress	copy.c	/^void * show_progress(void *param)$/;"	f
+source	copy.c	/^    char *source;$/;"	m	struct:copy_params	file:
+status	global.h	/^WINDOW *status;$/;"	v
+total_refresh	ui.c	/^void total_refresh()$/;"	f
+w	global.h	/^    WINDOW *w;      \/\/ inner  window, to print files$/;"	m	struct:field
+win	copy.c	/^    WINDOW *win;$/;"	m	struct:copy_params	file:
+win_to_print	copy.c	/^    WINDOW *win_to_print;$/;"	m	struct:print_window	file:
+windows	global.h	/^struct field windows[WINDOW_COUNT];$/;"	v	typeref:struct:field
+ycm_core	.ycm_extra_conf.py	/^import ycm_core$/;"	i

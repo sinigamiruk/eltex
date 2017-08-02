@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.6)
+project(daemon)
+
+set(CMAKE_C_STANDARD 90)
+set(CMAKE_C_FLAGS "-O2 -Wall -Wextra -pedantic")
+set(SOURCE_FILES main.c)
+add_executable(sockets ${SOURCE_FILES})
