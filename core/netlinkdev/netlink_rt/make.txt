@@ -1,0 +1,6 @@
+CFLAGS = -O2 -Wall -pedantic -ansi
+
+all:
+		gcc -o netlink_recv netlink_recv.c
+clean:
+rm netlink_recv

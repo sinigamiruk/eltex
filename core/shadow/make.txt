@@ -1,0 +1,14 @@
+MCFLAGS = -O2 -Wall -pedantic -ansi
+obj-m += kernel_shadow.o
+
+KDIR ?= /lib/modules/$(shell uname -r)/build
+	
+all: user_shadow
+		make -C $(KDIR) M=$(PWD) modules
+
+user_shadow: user_shadow.c
+		gcc -o $@ $< $(MCFLAGS)
+
+clean:
+		make -C $(KDIR) M=$(PWD) clean
+rm user_shadow
